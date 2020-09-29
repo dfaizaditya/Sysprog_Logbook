@@ -6,7 +6,7 @@ System call adalah tata cara pemanggilan di program aplikasi untuk memperoleh la
 disediakan oleh sistem operasi. System call berupa rutin sistem operasi untuk keperluan tertentu yang
 spesifik.
 
-## AKenapa kita membutuhkan system call?
+## Kenapa os membutuhkan system call?
 System call dibutuhkan karena OS modern menerapkan isolasi antara proses user dan kernel. Isolasi
 antar user dan kernel, menyebabkan user mode memerlukan cara untuk meminta izin terhadap
 tindakan yang memiliki hak istimewa dari kernel. Contoh : membaca atau menulis disk fisik.
@@ -25,7 +25,9 @@ dipanggil,fungsi tersebut akan dieksekusi di register dan stack.
 
 ## System call error handling 
 Kita dapat mengetahui apa error yang terjadi melalui liblary <errno.h> yang mendefinisikan variabel
-integer errno dan memberikan feed back berupa symbolic name
+integer errno dan memberikan feed back berupa symbolic name. Beberapa system call dapat memeberikan return yang berbeda untuk terjadinya kesalahan. Errno disetel ke nol saat program dimulai. Fungsi tertentu dari pustaka C standar mengubah nilainya
+menjadi selain nol (1,2,…13) untuk menandakan beberapa jenis kesalahan. kita juga dapat mengubah
+nilainya atau mengatur ulang ke nol sesuai kebutuhan.
 | Serrno |  value Error |
 | -------------------| --------------------- |
 |1 | /* Operation not permitted */ |
