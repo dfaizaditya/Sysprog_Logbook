@@ -2,14 +2,14 @@
 Kegiatan saya selama minggu ke-3 ini relatif sama dengan minggu sebelumnya, saya memulai dengan Menonton video materi yang tersedia di scele, dilanjutkan dengan mengerjakan pretest dan WS. Materi yang saya pelajari berfokus kepada "Memory" dan "process" tentang jenis dan cara kerjanya hingga berbagai jenis dan kegunaanya.
 
 ## The memory structure of a process 
-Stack segment : adalah area memori yang digunakan proses untuk menyimpan variabel lokal dari fungsi
+1. Stack segment : adalah area memori yang digunakan proses untuk menyimpan variabel lokal dari fungsi
 dan informasi lain yang disimpan setiap kali suatu fungsi dipanggil.
-Heap segment : adalah area memoi yang digunakan untuk alokasi memori dinamis. Segmen ini
+2. Heap segment : adalah area memoi yang digunakan untuk alokasi memori dinamis. Segmen ini
 digunakan secara bersama pleh semua proses yang berjalan di system.
-BBS segment : adalah area memori yang menyimpan semua variabel global yang tidak diinisialisasi dalam
+3. BBS segment : adalah area memori yang menyimpan semua variabel global yang tidak diinisialisasi dalam
 program.
-Data segment : adalah area memori yang menyimpan semua variabel global yang diinisialisasi
-Text segment : adalah area memori yang berisi instruksi mesin yang dijalankan CPU.
+4. Data segment : adalah area memori yang menyimpan semua variabel global yang diinisialisasi
+5. Text segment : adalah area memori yang berisi instruksi mesin yang dijalankan CPU.
 
 ## Reference Locality
 Reference locality adalah suatu kecenderungan prosesor mengakses set dari lokasi memory yang sama untuk beberapa saat.
