@@ -1,5 +1,5 @@
 ## Apa yang saya pelajari selama minggu ke-5 Sysprog?
-Kegiatan saya selama minggu ke-3 ini relatif sama dengan minggu sebelumnya, saya memulai dengan Menonton video materi yang tersedia di scele, dilanjutkan dengan mengerjakan pretest dan WS. Materi yang saya pelajari berfokus kepada "Memory" dan "process" tentang jenis dan cara kerjanya hingga berbagai jenis dan kegunaanya.
+Kegiatan saya selama minggu ke-3 ini relatif sama dengan minggu sebelumnya, saya memulai dengan Menonton video materi yang tersedia di scele, dilanjutkan dengan mengerjakan pretest dan WS. Materi yang saya pelajari berfokus kepada "Memory" dan "process" tentang struktur sebuah proses, memory leak hingga, sysctem call malloc(), sbrk(), setjmp(), dan longjmp().
 
 ## The memory structure of a process 
 1. Stack segment : adalah area memori yang digunakan proses untuk menyimpan variabel lokal dari fungsi
