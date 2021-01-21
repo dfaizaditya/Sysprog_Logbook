@@ -1,5 +1,5 @@
-## Apa yang saya pelajari selama minggu ke-3 Sysprog?
-Kegiatan saya selama minggu ke-3 ini relaif sama dengan minngu sebelumnya, saya memulai dengan Menonton video materi yang tersedia di scele, dilanjutkan dengan mengerjakan pretest dan WS. Materi yang saya pelajari berfokus kepada "System Call" tentang bagaimana cara kerjanya hingga berbagai jenis dan kegunaanya.
+## Apa yang saya pelajari selama minggu ke-11 Sysprog?
+Minggu ini pembelajaran saya difokuskan pada background processes. Simobol "&" di belakang sebuah command (<command> &) menandakan subuah background process. Background process terhubung dengan suatu terminal, bila terminalnya dimatikan atau dikirim signal seperti SIGTERM atau SIGKILL, process tersebut juga akan dimatikan atau mendapatkan signal yang sama dengan controlling terminalnya.
 
 ## Nohup, SIGHUP, dan Simbol &
 Nohup adalah command yang digunakan untuk menjalankan suatu script yang immune dengan signal
@@ -10,5 +10,17 @@ Disown adalah command dalam bash yang digunakan untuk menghapus suatu process da
 terminal yang memanggilnya.
 
 Simbol & adalah instruksi untuk mengeksekusi sebuah perintah (<command> &) agar dijalankan dalam
-background process dan segera kembali ke commad line untuk perintah tambahan. Background process
-akan mati setelah sesi shell ditutup
+background process dan segera kembali ke commad line untuk perintah tambahan. Background process akan mati setelah sesi shell ditutup
+
+## Sessions
+Sessions adalah kumpulan dari beberapa process groups. Pada Session ID (SID) yang sama pada suatu
+kumpulan process, kumpulan process tersebut memiliki 1 controlling terminal yang sama. Baik process
+groups maupun sessions memiliki leader, dimana process yang pertama kali memulai adalah process
+group leader atau session leader.
+
+## Daemon process vs normal Process
+Perbedaan antara daemon process dan normal Process adalah, Daemon process umunya
+memiliki PID init atau PID sytemd. Daemon Juga biasnya tidak memiliki controlling terminal,
+sedangkan normal process memiliki controlling terminal.
+
+
