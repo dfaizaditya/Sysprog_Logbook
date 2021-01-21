@@ -3,13 +3,13 @@ Minggu ini pembelajaran saya difokuskan pada topik scripting, terutama dengan BA
 menjalankan sebuah bash script, kita bisa mem-pass beberapa parameter atau command-line arguments, yang mirip
 seperti bagaimana kita menjalankan sebuah compiled C file.
 
-##Shell Scripting
+## Shell Scripting
 Shell script adalah sebuah program yang dituliskan untuk dijalankan oleh Unix/Linux shell. Penulisan program sama logikanya dengan bahasa pemrograman biasa, akan tetapi shell scripting dapat menyertakan command-command dan fitur-fitur yang terdapat di dalam Unix/Linux shell.
 
-##Shell variables
+## Shell variables
 Variabel shell adalah variabel khusus yang ditetapkan oleh shell dan dibutuhkan oleh shell agar dapat berfungsi dengan benar. Beberapa variabel ini adalah environtment variabel sedangkan yang lainnya adalah local variabel.
 
-##Perbedaan $* and $@?
+## Perbedaan $* and $@?
 $* menyimpan secara lengkap “string” dari seluruh positional argumen pada suatu program mencakup dari argumen pertama atau $1 sampai argumen ke N, sementara $@ melakukan hal yang sama namun pada “array of string”.
 ##Perbedaan  & / &&?
 & bersifat bitwise, sementara && adalah operator logika untuk “and”.
